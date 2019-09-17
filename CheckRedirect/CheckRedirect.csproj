@@ -7,7 +7,7 @@
     <ProjectGuid>{B0909221-741F-41D1-A444-598932C3E2D6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CheckRedirect</RootNamespace>
-    <AssemblyName>CheckRedirect</AssemblyName>
+    <AssemblyName>Redirect Checker</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

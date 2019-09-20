@@ -211,6 +211,12 @@ namespace CheckRedirect
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
                 //Returns TRUE if the Status code == 200
                 response.Close();
+                char slesh = response.ResponseUri.AbsoluteUri[response.ResponseUri.AbsoluteUri.Length - 1];
+                if(slesh == 47)
+                {
+                    redirect = redirect + "/";
+                    return (response.ResponseUri.AbsoluteUri != url) && (redirect == response.ResponseUri.AbsoluteUri);
+                }
                 return (response.ResponseUri.AbsoluteUri != url)&&(redirect== response.ResponseUri.AbsoluteUri);
             }
             catch

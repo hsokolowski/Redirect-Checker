@@ -367,7 +367,7 @@ namespace CheckRedirect
 
                 for (int i = 0; i < green.Count; i++)
                 {
-                    xlsSheet["A" + (red.Count + 2 + i)].Value = green[i];
+                    xlsSheet["A" + (red.Count + 2 + i + 1)].Value = green[i];
                 }
 
                 string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
